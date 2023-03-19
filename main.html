@@ -7,37 +7,63 @@
 </head>
 
 <body>
-	<form>
+	<form method="get">
 			<label for=""name""> Name</label>
-			<input type="text" placeholder="Name" required>
+			<input type="text" placeholder="Name" id="name" required>
 		</br>
 
 		
 			<label for=""email"">Email</label>
-			<input type="email" placeholder="Email">
+			<input type="email" placeholder="Email" id="email" required>
 		</br>
 
 		<label for=""gender"">Gender</label>
-		<div>
+
+         <div>
             <div>
                 <label for="male">Male</label>
-                <input type="radio" name="gender_f">
+                <input type="radio" name="gender" id="gender_m">
             </div>
-        </div>
+        
 
-        <div>
+       
             <div>
                 <label for="female">Female</label>
-                <input type="radio" name="gender">
+                <input type="radio" name="gender" id="gender_f">
             </div>
         </div>
 
-        <div>
-            <div>
-                <label for="other">Other</label>
-                <input type="radio" name="gender">
-            </div>
-        </div>
+		<label for=""car"">Car Brands</label>
+		<select name="car" id="car" placeholder="--Please choose an option--">
+			<option value="BMW">BMW</option>
+			<option value="Audi">Audi</option>
+			<option vlaue="Mercedez">Mercedez</option>
+		</select>
+	</br>
+
+		<label for=""age"">Age</label>
+		<input type="number" id="age" placeholder="Age" required>
+	</br>
+
+		<lable for=""dob"">DOB</lable>
+		<input type="date" id="dob" required>
+	</br>
+
+		<lable for=""phone number"">Phone Number </lable>
+		<input type="number" id="tel" placeholder="xxx-xxx-xxxx" required>
+	</br>
+
+		<label for=""password"">Password</label>
+		<input type="password" id="password" id="password">
+	</br>
+
+		<label for=""tos"">I agree to the TOS</label>
+		<input type="checkbox" id="tos">
+	</br>
+
+		<lable for="Submit"></lable>
+		<input type="button" value="Submit">
+			
     </form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
